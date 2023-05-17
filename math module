@@ -1,0 +1,83 @@
+import math
+
+
+#math.fabs()
+
+print(math.fabs(-9.4))
+print(math.fabs(-12.4))
+
+#math.floor()
+print(math.floor(23.9)) # for positive value,floor removed and sign is not change 
+print(math.floor(2.9))
+print(math.floor(-2.9)) # for negitive value,floor removed and sign is not change but converted next int least value execept decimal zero(0)
+
+print(math.floor(-3.1))
+print(math.floor(-22.1))
+
+#math.ceil()
+
+print(math.ceil(10.01)) #for positive value,floor removed and sign is not change but convrt to next int 
+print(math.ceil(12.00))
+print(math.ceil(29.01))
+print(math.ceil(-25.01)) #for negitive value,floor removed and sign is not change but no cnvrt to next int
+print(math.ceil(-72.01)) 
+
+#math.fmod()
+
+print(math.fmod(12,2)) #gives remainder with floor (x/y)
+print(math.fmod(36,3))
+print(math.fmod(12,5))
+
+#math.fsum()
+
+print(math.fsum([4,56,74,12,45])) #returns with floor
+print(math.fsum([24,536,4,11,4]))
+print(math.fsum([42,6,7,1,5]))
+
+#math.gcd() or hcf
+
+print(math.gcd(12,48))# returns value which divisable both value itself and remainder zero, if both reaminder zeros it gives
+print(math.gcd(12,72))
+print(math.gcd(11,55))
+
+#math.isfinite() 
+
+print(math.isfinite(11)) #true
+print(math.isfinite(100))
+print(math.isfinite(1))
+#print(math.isfinite("info")) # must be real numbers only not string
+
+#math.sqrt()
+
+print(math.sqrt(100)) # returns the square root value
+print(math.sqrt(625))
+print(math.sqrt(289))
+
+#math.factorial()
+print(math.factorial(4))#24
+
+#math.trunc()
+print(math.trunc(23.89)) # just removed decimal values and signs not chnages
+print(math.trunc(69.00))
+print(math.trunc(-23.89))
+
+#math.pow()
+
+print(math.pow(5,3))
+print(math.pow(25,3))
+print(math.pow(16,3))
+
+#math.remainder() same as fmod but small change here.check with next quotient as well 
+
+print(math.remainder(58,5)) # divisible by 58 with 5  quotient is 11 and return 3 and check quotient+1 so  12 return -2
+print(math.remainder(38,3))  #divisible by 38 with 3  (got 12 return 2) and (13 return 1) so it takes 1.0
+print(math.remainder(61,3)) 
+
+#math.pi()
+
+
+print(math.degrees(2)) 
+print(math.radians(60)) 
+print(math.sin(2)) 
+print(math.cos(0.5)) 
+print(math.tan(0.23))
