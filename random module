@@ -1,0 +1,61 @@
+
+import random 
+
+#random.randrange() returns random value and it allows third variable
+
+print(random.randrange(50,75,2))
+print(random.randrange(10,115,2))
+
+#random()
+print(random.random())# no need to put parameter in  random
+
+#seed()
+
+random.seed(10)
+print(random.random())
+
+#or
+
+from random import seed
+seed(10)
+print(random.random())
+
+#randint()
+# it will not allows the third variable
+print(random.randint(10,100))
+print(random.randint(10,200))
+print(random.randint(10,300))
+print(random.randint(10,300))
+
+#choice() #it will pick radom
+
+list_1=['red','black','orange','green']
+print(random.choice(list_1))
+print(random.choice(list_1))
+print(random.choice(list_1))
+print(random.choice(list_1))
+
+#choices()here we will give choice to repeat element for n times mean declare repaet= n
+
+list_1=['red','black','orange','green','white']
+print(random.choices(list_1,weights=[4,2,3,1,3],k=10))
+# red=4,blck=2,orange=3 like so on but it will gives probably elements
+#answer is 10 elements ['red', 'orange', 'red', 'white', 'green', 'black', 'black', 'red', 'black', 'black']
+
+
+# shuffle()
+list_1=['red','black','orange','green','white']
+print(random.shuffle(list_1))
+print(list_1)# to see shuffle use print again
+'''answer is ['white', 'black', 'red', 'green', 'orange']'''
+
+#sample()
+list_1=['red','black','orange','green','white']  # k is compulsory
+print(random.sample(list_1,k=1))
+print(random.sample(list_1,k=2))
+print(random.sample(list_1,k=3))
+
+#uniform()
+
+list_1=['red','black','orange','green','white']
+print(random.uniform(66,120))
