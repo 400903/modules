@@ -1,0 +1,53 @@
+#calendar module()
+
+#month()
+import calendar
+print(calendar.month(2022,4))
+
+#or
+y=2023
+m=5
+print(calendar.month(y,m))
+
+#without using print fun() or other way to call
+calendar.prmonth(1995,5)
+
+
+#year() or total year calendar
+
+print(calendar.calendar(2022)) # here dont use year
+calendar.prcal(2024)
+
+#monthcalendar() will return listwise day number from 0 to 7 on so
+print( calendar.monthcalendar(2023,5))
+#answer is [[1, 2, 3, 4, 5, 6, 7], [8, 9, 10, 11, 12, 13, 14], [15, 16, 17, 18, 19, 20, 21], [22, 23, 24, 25, 26, 27],
+[29, 30, 31, 0, 0, 0, 0]
+
+#monthrange()
+print(calendar.monthrange(2023,4))#year 2023 nd april month, it returns day number of start week and no of days in mnth
+print(calendar.monthrange(2023,5))
+
+#weekheader()
+print(calendar.weekheader(9))
+print(calendar.weekheader(2))
+print(calendar.weekheader(3))
+
+#isleap()
+
+print(calendar.isleap(2022))
+print(calendar.isleap(2024))
+print(calendar.isleap(2018))
+print(calendar.isleap(2019))
+
+#leapdays() #returns the leap years between given range of years
+print(calendar.leapdays(2000,2022))
+print(calendar.leapdays(1995,2023))
+
+#firstweekday()
+print(calendar.firstweekday()) #just return the 0
+
+#setfirstweekday()
+calendar.setfirstweekday(6)
+print(calendar.firstweekday())
+
+#(mon to sunday strts with 0 to 6)
